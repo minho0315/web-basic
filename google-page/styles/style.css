@@ -1,0 +1,77 @@
+body {
+  background-color: rgb(53, 53, 53);
+}
+
+header {
+  width: 100%;
+  height: 80px;
+}
+
+nav {
+  float: right;
+}
+
+.nav-items > li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0px 8px;
+}
+
+.nav-items > li > a {
+  line-height: 24px;
+
+  color: rgb(255, 255, 255);
+}
+
+.nav-items > li > img {
+  width: 32px;
+  height: 32px;
+}
+
+.nav-items > li > button {
+  display: block;
+  background-color: blueviolet;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: aliceblue;
+  border-width: 0;
+}
+
+.center-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#google-logo {
+  width: 300px;
+  height: 96px;
+  margin-top: 112px;
+  margin-bottom: 56px;
+}
+
+.input-div {
+  background-color: aliceblue;
+  border-radius: 40px;
+  width: 520px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.input-div > img {
+  width: 24px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.input-div > input {
+  width: 472px;
+  height: 40px;
+  border: 0;
+  outline: 0;
+}
