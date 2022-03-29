@@ -1,5 +1,9 @@
 body {
   background-color: rgb(53, 53, 53);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
 }
 
 header {
@@ -10,17 +14,25 @@ header {
 nav {
   float: right;
 }
+.nav-items {
+  padding: 0 16px;
+}
 
 .nav-items > li {
   display: inline-block;
   vertical-align: middle;
-  padding: 0px 8px;
+  padding: 4px 4px;
+  margin: 0px 4px;
 }
 
 .nav-items > li > a {
   line-height: 24px;
-
   color: rgb(255, 255, 255);
+}
+
+.nav-items > li > a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .nav-items > li > img {
@@ -37,6 +49,15 @@ nav {
   color: aliceblue;
   border-width: 0;
 }
+.nav-items > li > button:hover {
+  cursor: pointer;
+}
+
+.nav-li-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 32px;
+  cursor: pointer;
+}
 
 .center-div {
   display: flex;
@@ -47,7 +68,7 @@ nav {
 #google-logo {
   width: 300px;
   height: 96px;
-  margin-top: 112px;
+  margin-top: 96px;
   margin-bottom: 48px;
 }
 
@@ -80,8 +101,14 @@ nav {
   width: 112px;
   height: 112px;
   display: flex;
+  padding: 8px;
   align-items: center;
   flex-direction: column;
+}
+.plus-div-div:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .plus-div {
@@ -91,6 +118,7 @@ nav {
   width: 48px;
   display: flex;
   align-items: center;
+  margin: auto;
 }
 
 .plus-div > img {
@@ -98,6 +126,5 @@ nav {
 }
 
 .plus-div-div > span {
-  margin-top: 12px;
   color: aliceblue;
 }
